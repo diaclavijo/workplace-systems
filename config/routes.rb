@@ -1,4 +1,7 @@
 WorkplaceSystems::Application.routes.draw do
+  root 'point_sale_data#new'
+  resources :point_sale_data, only: [:new, :create, :show]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

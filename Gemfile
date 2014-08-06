@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
+gem 'carrierwave'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -41,5 +43,6 @@ end
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
+gem 'fastest-csv'
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]

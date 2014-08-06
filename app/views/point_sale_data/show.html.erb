@@ -1,0 +1,27 @@
+<h1>Listing point_sale_data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Code</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @point_sale_data.each do |point_sale_datum| %>
+      <tr>
+        <td><%= point_sale_datum.datetime.date %></td>
+        <td><%= point_sale_datum.datetime.time %></td>
+        <td><%= point_sale_datum.code %></td>
+        <td><%= point_sale_datum.value %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Point sale datum', new_point_sale_datum_path %>

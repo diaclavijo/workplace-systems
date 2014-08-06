@@ -1,0 +1,11 @@
+<%= form_for(@point_sale_datum, multipart: true) do |f| %>
+
+
+  <div class="field">
+    <%= f.label :file %><br>
+    <%= f.file_field :file %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
